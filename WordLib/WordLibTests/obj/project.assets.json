@@ -1901,6 +1901,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "WordLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WordLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WordLib.dll": {}
+        }
       }
     }
   },
@@ -6761,6 +6771,11 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "WordLib/1.0.0": {
+      "type": "project",
+      "path": "../WordLib/WordLib.csproj",
+      "msbuildProject": "../WordLib/WordLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6768,6 +6783,7 @@
       "MSTest.TestAdapter >= 2.2.10",
       "MSTest.TestFramework >= 2.2.10",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
+      "WordLib >= 1.0.0",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -6797,7 +6813,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\adiar\\OneDrive\\Desktop\\TDD_Workshop-C#\\WordLib\\WordLib\\WordLib.csproj": {
+              "projectPath": "C:\\Users\\adiar\\OneDrive\\Desktop\\TDD_Workshop-C#\\WordLib\\WordLib\\WordLib.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
